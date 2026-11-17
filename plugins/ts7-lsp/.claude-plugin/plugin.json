@@ -1,6 +1,6 @@
 {
   "name": "ts7-lsp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TypeScript/JavaScript code intelligence from the native TypeScript 7 language server (tsc --lsp), using the project's own tsc",
   "author": {
     "name": "KevLehman",
