@@ -9,10 +9,10 @@ bundled TypeScript and checks your code with the wrong compiler.
 
 ## Which `tsc` it runs
 
-The project's own. Starting at the project root, it walks up to the nearest
-`node_modules/.bin/tsc` and runs that, so the server always matches the TypeScript version the
-project builds with, whatever the package manager. With no local `tsc` (for example Yarn Plug'n'Play),
-it uses `tsc` from your `PATH`.
+The project's own: `node_modules/.bin/tsc` in the project root, so the server always matches the
+TypeScript version the project builds with, whatever the package manager. It never looks above the
+project root. With no `tsc` there (for example Yarn Plug'n'Play, or a monorepo package opened on its
+own), it uses `tsc` from your `PATH`.
 
 That `tsc` must be TypeScript 7 or later. An older one has no `--lsp` mode and the server
 won't start, so enable the plugin only in projects on TypeScript 7.
