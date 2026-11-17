@@ -1,0 +1,17 @@
+{
+  "name": "ts7-lsp",
+  "version": "1.0.0",
+  "description": "TypeScript/JavaScript code intelligence from the native TypeScript 7 language server (tsc --lsp), using the project's own tsc",
+  "author": {
+    "name": "KevLehman",
+    "url": "https://github.com/KevLehman"
+  },
+  "repository": "https://github.com/KevLehman/ts7-lsp",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "lsp",
+    "tsgo"
+  ],
+  "lspServers": "./.lsp.json"
+}

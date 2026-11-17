@@ -1,0 +1,10 @@
+#!/bin/sh
+dir=${CLAUDE_PROJECT_DIR:-$PWD}
+while :; do
+	if [ -x "$dir/node_modules/.bin/tsc" ]; then
+		exec "$dir/node_modules/.bin/tsc" --lsp --stdio "$@"
+	fi
+	[ "$dir" = / ] && break
+	dir=$(dirname "$dir")
+done
+exec tsc --lsp --stdio "$@"

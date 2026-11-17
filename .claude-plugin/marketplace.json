@@ -1,0 +1,15 @@
+{
+  "name": "ts7-lsp",
+  "owner": {
+    "name": "KevLehman"
+  },
+  "plugins": [
+    {
+      "name": "ts7-lsp",
+      "description": "TypeScript/JavaScript code intelligence from the native TypeScript 7 language server (tsc --lsp), using the project's own tsc",
+      "source": "./plugins/ts7-lsp",
+      "category": "development"
+    }
+  ],
+  "description": "Claude Code plugin for the native TypeScript 7 language server"
+}
